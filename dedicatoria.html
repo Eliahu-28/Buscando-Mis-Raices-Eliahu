@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMR – Buscando Mis Raíces</title>
+  <style>
+    body { 
+      font-family:'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+    }
+    header { 
+      background: linear-gradient(135deg, #00b89f, #007d70);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      font-size: 20px;
+    }
+    .dedication-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .dedication-grid button {
+      background-color: #00b89f;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .dedication-grid button:hover {
+      background-color: #008c77;
+      transform: scale(1.03);
+    }
+    .dedication-content {
+      display: none;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+    }
+    .back-button {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .back-button a {
+      background-color: #00b89f;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+    .back-button a:hover {
+      background-color: #008c77;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Buscando Mis Raíces</h1>
+    <h2>Eliahu Kalman Simkins Benzaquen</h2>
+  </header>
+
+  <div id="dedicatoria" class="section">
+    <h2><center>Buscando Mis Raíces</h2></center>
+    <div class="dedication-grid">
+      <button onclick="toggleBio('dedication_que')">¿Qué es?</button>
+      <button onclick="toggleBio('dedication_dedicatoria')">Dedicatoria</button>
+      <button onclick="toggleBio('dedication_importancia')">Importancia</button>
+    </div>
+
+    <div id="dedication_que" class="dedication-content">
+      <h3>¿Qué es?</h3>
+      <p>El proyecto de Buscando Mis Raíces es un proyecto en el cual los alumnos cursantes del 2º año de bachillerato en el Colegio Moral y Luces "Herzl-Bialik" realizan para mediante una investigación profunda, conocer sobre su historia familiar y, en el trascurso del año escolar, compilar en un libro o álbum, biografías, líneas de tiempo, orígenes de los nombres y de los apellidos, árboles genealógicos, recorridos desde los países de origen, fotos, documentos y objetos, entre muchos otros elementos, lo que convierte ese trabajo en un hermoso legado familiar.</p><p>Este proyecto es liderado y guiado por la Morá Myriam Obermeister desde hace ya 20 años.</p>
+    </div>
+    <div id="dedication_dedicatoria" class="dedication-content">
+      <h3>Dedicatoria</h3>
+      <p>Este proyecto esta dedicado a las personas que más han influenciado en mi vida, dándome los mejores consejos, guiándome y haciéndome una persona de bien, con todo mi amor y afecto se los dedico a:</p><p>- Mis padres los cuales fueron ejemplos de inspiración para mi, por sus sacrificios y esfuerzos y amor incondicional.</p><p>- A mi abuela Ana Z"L y a mi abuelo Yeoshua Z"L, a los cuales extraño muchísimo y esperaba que ellos me ayudara a hacer este trabajo por sus amplios conocimientos e historias, que me hubieran gustado escuchar durante horas personalmente.</p><p>- A mis familiares y personas que me ayudaron con este trabajo, les agradezco todo el esfuerzo y tiempo que invirtieron ayudándome para hacer que este sea un trabajo dedicado y único, en especial a mi hermana Deborah por el inmenso apoyo en completarlo y culminarlo hasta en el más mínimo detalle faltante y en toda la diagramación e investigación profunda.</p><p>- A la Morá Myriam Obermeister por darme la oportunidad de realizar este trabajo</p>
+    </div>
+    <div id="dedication_importancia" class="dedication-content">
+      <h3>Importancia</h3>
+      <p>Las enseñanzas que provienen de nuestras raíces nos pueden ayudar a saber hacia dónde ir en diversos momentos de nuestras vidas. También colaboran para que decidamos cómo queremos llegar a cada destino, es más fácil dirigirnos hacia nuestros objetivos si valoramos de dónde venimos.</p><p>Saber nuestros antecedentes culturales y de dónde venimos nos ayudará a desarrollar un fuerte sentido sobre quiénes somos en realidad. La forma en que nos relacionamos con las historias familiares y creamos relatos acerca de nosotros mismos nos ayuda a establecer nuestra identidad esencial única y auténtica.</p><p>Me gustó mucho este trabajo ya que te conecta con tus antepasados y te hace investigar que hicieron nuestros ancestro para que nosotros podamos vivir y tener una descendencia teniendo como base nuestro profundo pasado.</p>
+    </div>
+<div style="text-align: center; margin: 50px 0;">
+  <a href="index.html" style="
+    background-color: #00b89f;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+  ">⬅ Volver al Inicio</a>
+</div>
+</div>
+<script>
+  function toggleBio(id) {
+    document.querySelectorAll('.dedication-content').forEach(sec => {
+      sec.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'block';
+  }
+</script>
+</body>
+</html>

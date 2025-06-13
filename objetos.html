@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetos – Buscando Mis Raíces</title>
+  <style>
+    body { 
+      font-family:'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+    }
+    header { 
+      background: linear-gradient(135deg, #00b89f, #007d70);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      font-size: 20px;
+    }
+    .object-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .object-grid button {
+      background-color: #00b89f;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .object-grid button:hover {
+      background-color: #008c77;
+      transform: scale(1.03);
+    }
+    .object-content {
+      display: none;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+    }
+    .back-button {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .back-button a {
+      background-color: #00b89f;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+    .back-button a:hover {
+      background-color: #008c77;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Buscando Mis Raíces</h1>
+    <h2>Eliahu Kalman Simkins Benzaquen</h2>
+  </header>
+
+  <div id="objeto" class="section">
+    <h2><center>Objetos</center></h2>
+    <div class="object-grid">
+      <button onclick="toggleBio('object_tikun')">Tikun Lekorim</button>
+      <button onclick="toggleBio('object_shas')">Shas de Guemará</button>
+      <button onclick="toggleBio('object_dvd')">DVD Testimonio del Holocausto de Gitta Roth</button>
+      <button onclick="toggleBio('object_anillo')">Anillo de Bodas</button>
+      <button onclick="toggleBio('object_vaso')">Copa de Bodas</button>
+      <button onclick="toggleBio('object_birkón')">Birkón de recuerdo de la Boda</button>
+      <button onclick="toggleBio('object_saba')">Talit y Tefilim de Serge</button>
+      <button onclick="toggleBio('object_papi')">Objetos del Bar Mitzva de mi Papá</button>
+      <button onclick="toggleBio('object_eli')">Objetos de mi Bar Mitzva</button>
+      <button onclick="toggleBio('object_sombrero')">Sombrero de Yeoshua Z"L</button>
+      <button onclick="toggleBio('object_sidur')">Sidur de Ana Z"L</button>
+      <button onclick="toggleBio('object_caja')">Caja Musical</button>
+      <button onclick="toggleBio('object_artesanal')">Escultura Artesanal de Rebeca</button>
+    </div>
+
+    <div id="object_tikun" class="object-content">
+      <h3>Tikun Lekorim</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1Vc4-30rzRXqYIHbtsl0z3SMtp7iKPyh8/preview"
+        width="300" height="450" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+      <p>Este libro se llama tikun lekorim, es utilizado para practicar la lectura de la tora; lo aprecio mucho ya que cuando fallecio mi abuelo, fuimos a su casa y encontre este tikun, mi abuelo en su casa era el de mejor comportamiento, por eso sabemos que él lo heredo de su padre, y lo utilizó mucho cuando fue rabino, yo lo herede de él</p>
+    </div>
+    <div id="object_shas" class="object-content">
+      <h3>Shas de Guemará</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1VEEsU0EcSPkJejeOl26C3_u2o1WIi42J/preview"
+        width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+      <p>Esta colección de libros se llama shas, el estudio de la Tora oral pero escrito; este shas representa para mí un gran valor sentimental ya que antes de hacer Bar Mitzva mis tíos viajaron de diferentes lugares, mi tío Salomón viajo de Israel y me trajo esta colección y siempre que la utilizo para estudiar con mi papá pienso en él y el esfuerzo que conllevó traerla</p>
+    </div>
+    <div id="object_dvd" class="object-content">
+      <h3>DVD Testimonio del Holocausto de Gitta Roth</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1rPT1uv-Ux5HwQ7jg7PHDa-eljfHmbJzV/preview"
+        width="300" height="450" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+      <p>A mi bisabuela Gitta Roth le hicieron una entrevista como sobreviviente del Holocausto, el 8 de Marzo de 1990, llamada “Testimonios del Holocausto” para el Centro de Documentación y Educación del Holocausto de la Florida International University.</p>
+    </div>
+    <div id="object_anillo" class="object-content">
+      <h3>Anillo de bodas de mis padres</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1WPTV7_iyTeHIe48DxKr8HFaV3ANqh8W6/preview"
+        width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+      <p>Es el anillo que mi papá le dió a mi mamá de bodas</p>
+    </div>
+    <div id="object_vaso" class="object-content">
+      <h3>Copa de la boda de mis padres</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1N1wDssqShQB0gcpiVQCd9xAmpFCQEYpH/preview"
+        width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+      <p>Son los trozos de de la copa de vidrio de la jupá de mis padres</p>
+    </div>
+    <div id="object_birkón" class="object-content">
+      <h3>birkón de recuerdo de la boda de mis padres</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1Q_3SCfbTaJMp6ds_UmGCRXl2zdB375Aj/preview"
+        width="300" height="450" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+      <p>Este Birkón es el recuerdito que mis padres hicieron para los invitados de su boda, el 4 de diciembre de 2007</p>
+    </div>
+    <div id="object_saba" class="object-content">
+      <h3>Talit y Tefilin de mi abuelo Serge</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/18Bgl9uq1aqrRteUktedet4NyxbhD_fjF/preview"
+        width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+      <p>Es el Talit y el Tefilin que usa mi abuelo Serge diariamente</p>
+    </div>
+    <div id="object_papi" class="object-content">
+      <h3>Objetos del Bar Mitzva de mi Papá</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1E3qt_ttkPvwbEebhC0DJNtJNXmja_bpQ/preview"
+        width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+      <p>Es el Talit, Tefilin y la kipá que mi papá usó el día de su Bar Mitzva</p>
+    </div>
+    <div id="object_eli" class="object-content">
+      <h3>Objetos de mi Bar Mitzva</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1dlysAhmX4hQF3uG3RXYjaUwvZgUZbUH-/preview" width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+      <p>Es el Tefilin, el espejito y mi sidur que usé el día de mi Bar Mitzva, y los uso diariamente.</p>
+    </div>
+    <div id="object_sombrero" class="object-content">
+      <h3>Sombrero de mi abuelo Yeoshua Z"L</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/164x98JvLOkITyfELjIs6MPRdfn7QZY33/preview"
+        width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+      <p>Es el sombrero que mi abuelo usaba diariamente, tanto para día normal como para shabat o fiestas, y siempre lo acompañaba con su traje elegante</p>
+    </div>
+    <div id="object_sidur" class="object-content">
+      <h3>Sidur de mi abuela Ana Z"L</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1BwG1YI71Nphbd-cvZ5_sdOdm8fs4tf84/preview"
+        width="300" height="450" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+      <p>Es el sidur que usaba mi abuela diariamente para decir sus tefilot</p>
+    </div>
+<div id="object_caja" class="object-content">
+  <h3>Caja Musical</h3>
+  <div style="text-align: center;">
+    <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+      <iframe src="https://drive.google.com/file/d/1evMhdLSmmS-yK_Gl_8ntlpWv6ChtrdNP/preview"
+              width="300" height="250" style="border: none;"></iframe>
+      <iframe src="https://drive.google.com/file/d/1igMC3lGmCCh4VdaMR_NFlRAoukw36Yvu/preview"
+              width="300" height="250" style="border: none;"></iframe>
+    </div>
+    <p>Es una cajita musical con un joyero incluido que le dio mi bisabuelo Jacobo Z"L a mi abuela Rebeca.</p>
+  </div>
+</div>
+
+<div id="object_artesanal" class="object-content">
+  <h3>Escultura artesanal</h3>
+  <div style="text-align: center;">
+    <iframe src="https://drive.google.com/file/d/1XKja4Gp7_9iDicL8JfAKz0xlOjU6kZyw/preview"
+            width="300" height="250" style="border: none; display: block; margin: auto;"></iframe>
+    <p>Es una pequeña escultura artesanal que le regaló mi bisabuelo Jacobo Z"L a mi abuela Rebeca.</p>
+  </div>
+</div>
+<div style="text-align: center; margin: 50px 0;">
+  <a href="index.html" style="
+    background-color: #00b89f;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+  ">⬅ Volver al Inicio</a>
+</div>
+<script>
+  function toggleBio(id) {
+    document.querySelectorAll('.object-content').forEach(sec => {
+      sec.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'block';
+  }
+</script>
+</body>
+</html>

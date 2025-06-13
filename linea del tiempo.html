@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Línea del Tiempo – Buscando Mis Raíces</title>
+  <style>	
+    body { 
+      font-family:'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+    }
+    header { 
+      background: linear-gradient(135deg, #00b89f, #007d70);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      font-size: 20px;
+    }
+    .timeline-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .timeline-grid button {
+      background-color: #00b89f;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .timeline-grid button:hover {
+      background-color: #008c77;
+      transform: scale(1.03);
+    }
+    .timeline-content {
+      display: none;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+    }
+    .back-button {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .back-button a {
+      background-color: #00b89f;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+    .back-button a:hover {
+      background-color: #008c77;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Buscando Mis Raíces</h1>
+    <h2>Eliahu Kalman Simkins Benzaquen</h2>
+  </header>
+
+
+  <div id="linea" class="section">
+    <h2><center>Línea del Tiempo</h2></center>
+    <div class="timeline-grid">
+      <button onclick="toggleBio('year_2011')">2011</button>
+      <button onclick="toggleBio('year_2012')">2012</button>
+      <button onclick="toggleBio('year_2013')">2013</button>
+      <button onclick="toggleBio('year_2014')">2014</button>
+      <button onclick="toggleBio('year_2015')">2015</button>
+      <button onclick="toggleBio('year_2016')">2016</button>
+      <button onclick="toggleBio('year_2017')">2017</button>
+      <button onclick="toggleBio('year_2018')">2018</button>
+      <button onclick="toggleBio('year_2019')">2019</button>
+      <button onclick="toggleBio('year_2020')">2020</button>
+      <button onclick="toggleBio('year_2021')">2021</button>
+      <button onclick="toggleBio('year_2022')">2022</button>
+      <button onclick="toggleBio('year_2023')">2023</button>
+      <button onclick="toggleBio('year_2024')">2024</button>
+      <button onclick="toggleBio('year_2025')">2025</button>
+    </div>
+    <div id="year_2011" class="timeline-content"><h3>2011</h3><p>Nací, soy el primer varón de mi familia</p><p>Mi abuelo Yehoshua me hizo el Brit Mila casi al mes de nacido</p><p>Inicio mi escolaridad a los tres meses (septiembre)</p><p>Conocí a mis hermanas Deborah y Yael</p><p>Me hicieron mi primera sesión de fotos</p></div>
+    <div id="year_2012" class="timeline-content"><h3>2012</h3><p>Viajé a la boda de mi tía Shulamit en Israel con 8 meses (febrero)</p><p>Empecé a caminar</p><p>Fui a Italia y conocí el invierno</p><p>Tuve mi primer cumpleaños</p><p>Me disfracé de Sefer Torá en la fiesta de Purim</p><p></p>Me operaron de una ernia</div>
+    <div id="year_2013" class="timeline-content"><h3>2013</h3><p>Festejé la Fada de mi hermana Esther</p><p>Fui al museo de los niños</p><p>Subí al Ávila por primera vez</p><p>Bajé por primera vez a la playa</p><p>Tuve mi primera piñata de cumpleaños</p></div>
+    <div id="year_2014" class="timeline-content"><h3>2014</h3><p>Celebré mi corte de pelo de 3 años</p><p>Fui por primera vez al Campamento Gan Israel</p><p>Visité a mis primos de Canadá</p><p>Festejé el Brit Milá de mi hermano Shmuel</p><p>Aprendí a montar bicicleta</p></div>
+    <div id="year_2015" class="timeline-content"><h3>2015</h3><p>Tuve mi primera Feria del Libro</p><p>Viajé a mi primer Pesaj en Miami</p><p>Fui a Disneyland</p><p>Gané mi primera medalla de oro en natación</p><p>Hice mi primera exposición</p></div>
+    <div id="year_2016" class="timeline-content"><h3>2016</h3><p>Viví una de las épocas más duras de Venezuela con mi familia</p><p>Celebré la Fada de mi hermana Shulamit</p><p>Tuve mi primera pijamada en el colegio</p><p>Hice mi primer picnic en el Ávila con unos amigos</p><p>Aprendí a jugar bowling</p></div>
+    <div id="year_2017" class="timeline-content"><h3>2017</h3><p>Me disfracé de Los Increíbles junto con mi familia</p><p>Me lancé en una tirolina por primera vez</p><p>Cumplí seis años</p><p>Asistí a la primera competencia de gimnasia de mis hermanas</p><p>Visité a mi bisabuela en el Beit Avot</p></div>
+    <div id="year_2018" class="timeline-content"><h3>2018</h3><p>Festejé el Brit Mila de mi hermano Yosef</p><p>Estuve en el corte de pelo de mi hermano Shmuel</p><p>Me gradué de preescolar</p><p>Viví las guarimbas y los encierros por las protestas políticas</p><p>Viví Sucot con mis abuelos maternos</p></div>
+    <div id="year_2019" class="timeline-content"><h3>2019</h3><p>Tuve mi primer seder de Pesaj en Primaria</p><p>Cumplí ocho años</p><p>Pasé a segundo grado</p><p>Arme mi primer rompecabezas de 1000 piezas</p><p>Subí al Ávila con mi abuela</p></div>
+    <div id="year_2020" class="timeline-content"><h3>2020</h3><p>Entré en encierro por la cuarentena</p><p>Festejé la graduación de mi hermana Deborah a través de Zoom</p><p>Me reuní online para el Bar Mitzvá de mi primo de Canadá</p><p>Comencé a tener clases a través de Zoom</p><p>Tuve clases de tercer grado por zoom</p></div>
+    <div id="year_2021" class="timeline-content"><h3>2021</h3><p>Festejé el Bat Mitzvá de mi hermana Deborah</p><p>Comencé a ir a clases presenciales en una sinagoga</p><p>Pasé a cuarto grado</p><p>Viajamos de visita a un parque internacional</p><p>Regresé a clases presenciales</p></div>
+    <div id="year_2022" class="timeline-content"><h3>2022</h3><p>Viajé a Miami para celebrar el Bar Mitzvá de mi primo</p><p>Pasé a quinto grado</p><p>Aprendí a navegar un velero llamado optimist</p><p>Hice un curso de submarinismo</p><p>Navegué en un Kayack con mis tíos</p></div>
+    <div id="year_2023" class="timeline-content"><h3>2023</h3><p>Participé en un acto de Purim</p><p>Me gradué de primaria</p><p>Comencé el Liceo</p><p>Comencé las clases de Bar Mitzvá</p><p>Abrí una cápsula de tiempo de 1er grado</p></div>
+    <div id="year_2024" class="timeline-content"><h3>2024</h3><p>Festejé mi Bar Mitzvá</p><p>Me pusieron lentes</p><p>Participé por primera vez en el Jidón Tanaj</p><p>Pasé a 2do año</p><p>Acampé en Cuyagua por vacaciones</p></div>
+    <div id="year_2025" class="timeline-content"><h3>2025</h3><p>Participé en el Jidón Ivrit</p><p>Jugé en el Partido 2do vs 3ero que hace el liceo</p><p>Realicé el trabajo Buscando Mis Raíces</p><p>Comencé “La Liga” en fútbol</p><p>Festejé el Bat Mitzvá de mi hermana Esther</p>p>Celebré el cumpleaños número 99 de mi bisabuela Maruja</p></div>
+  </div>
+
+  </div>
+<div style="text-align: center; margin: 50px 0;">
+  <a href="index.html" style="
+    background-color: #00b89f;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+  ">⬅ Volver al Inicio</a>
+</div>
+<script>
+  function toggleBio(id) {
+    document.querySelectorAll('.timeline-content').forEach(sec => {
+      sec.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'block';
+  }
+</script>
+</body>
+</html>

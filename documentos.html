@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentos – Buscando Mis Raíces</title>
+  <style>
+    body { 
+      font-family:'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+    }
+    header { 
+      background: linear-gradient(135deg, #00b89f, #007d70);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      font-size: 20px;
+    }
+    .documents-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .documents-grid button {
+      background-color: #00b89f;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .documents-grid button:hover {
+      background-color: #008c77;
+      transform: scale(1.03);
+    }
+    .documents-content {
+      display: none;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+    }
+    .back-button {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .back-button a {
+      background-color: #00b89f;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+    .back-button a:hover {
+      background-color: #008c77;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Buscando Mis Raíces</h1>
+    <h2>Eliahu Kalman Simkins Benzaquen</h2>
+  </header>
+
+  <div id="documento" class="section">
+    <h2><center>Documentos</center></h2>
+    <div class="documents-grid">
+      <button onclick="toggleBio('documents_bisabuelo')">Pasaporte Bisabuelo</button>
+      <button onclick="toggleBio('documents_papi')">Pasaporte Papá</button>
+      <button onclick="toggleBio('documents_ketuva')">Ketuva</button>
+      <button onclick="toggleBio('documents_diploma')">Diploma Universitario</button>
+      <button onclick="toggleBio('documents_pasaporte')">Pasaporte Mamá</button>
+      <button onclick="toggleBio('documents_cartilla')">Cartilla de Nacimiento</button>
+      <button onclick="toggleBio('documents_pagina')">Libro de Vida</button>
+      <button onclick="toggleBio('documents_registro')">Registro de Deplazado</button>
+      <button onclick="toggleBio('documents_acompañante')">Registro de Acompañantes del Deplazado</button>
+      <button onclick="toggleBio('documents_tatarabuelo')">Pasaporte Tatarabuelo</button>
+      <button onclick="toggleBio('documents_teuda')">Teudá de una letra en la Torá</button>
+      <button onclick="toggleBio('documents_acta')">Acta de Nacimiento</button>
+    </div>
+
+    <div id="documents_bisabuelo" class="documents-content">
+      <h3>Pasaporte Tío Bisabuelo</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1QEFvelvJWwfuu1gmqRpb17bhH9j-wG4f/preview" width="500" height="350" style="border: none; display: block; margin: auto;"></iframe>
+<p>Pasaporte de Šabsajs Simkins Z"L, mi tío bisabuelo, nacido el 08/10/1917, entregado a la policía en Riga, Letonia, 1919-1940, recuperado por Yad Vashem</p>
+</div>
+</div>
+<div id="documents_papi" class="documents-content">
+      <h3>Pasaporte Ruben Simkins</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1Xwm8ccGTu9B78dY92Nt-gmkjZW-QNxxe/preview"></iframe>
+<p>Pasaporte de mi papá cuando tenía 5 años de edad</p>
+</div>
+</div>
+<div id="documents_ketuva" class="documents-content">
+      <h3>Ketuva</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1FBLA2H_akJnLqnBVvkgUkzpXErP0Yv1G/preview"></iframe>
+<p>Ketuva de la boda de Abigayil Benzaquen y Ruben Simkins (mis padres), 25 de kislev de 5768.</p>
+</div>
+</div>
+<div id="documents_diploma" class="documents-content">
+      <h3>Diploma de la Universidad Metropolitana</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1wogaaYMk_3e0qe6SzIuGqbUakjksSzYO/preview" width="350" height="500" style="border: none; display: block; margin: auto;"></iframe>
+<p>Diploma de la Universidad Metropolitana que le otorgó el título universitario de ingeniería mecánica a mi papá</p>
+</div>
+</div>
+<div id="documents_pasaporte" class="documents-content">
+      <h3>Pasaporte Mamá</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1YcHRPTvh1q5QfQMak3eFZESTHFMIrfZl/preview" width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+<p>Primer pasaporte de mi mamá, se lo sacaron en el 1983 y lo uso por primera vez en 1985 para viajar a Argentina a visitar a sus abuelos</p>
+</div>
+</div>
+<div id="documents_cartilla" class="documents-content">
+      <h3>Cartilla de Nacimiento</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1xFDvNIMKpyuvVDokWR4HBXXrzaRzlN58/preview"></iframe>
+<p>Cartilla del Hospital cuando nació mi papá, donde registraron sus datos cuando estaba recién nacido</p>
+</div>
+</div>
+<div id="documents_pagina" class="documents-content">
+      <h3>Página del libro de la Edad de Oro</h3>
+<div style="text-align: center;">
+<div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+    <iframe src="https://drive.google.com/file/d/1j33Ul_5ukc0efDzveaKzShOQuq3nYugi/preview"
+            width="300" height="250"
+            style="border: none;"></iframe>
+
+    <iframe src="https://drive.google.com/file/d/1ZvhEHg-Vrvf8wdws-pBJIOl-_o3r-tKa/preview"
+            width="250" height="300"
+            style="border: none;"></iframe>
+  </div>
+<p>Página en el libro de la Edad de Oro, "Libro de Vida", del Club Social Cultural Deportivo y Religioso Hebraica, donde aparece la biografía de Victoria Abbo Z"L, mi bisabuela, la cual fue miembro de la Edad de Oro</p>
+</div>
+</div>
+<div id="documents_registro" class="documents-content">
+  <h3>Registro de Desplazados</h3>
+  <div style="text-align: center;">
+    <iframe src="https://drive.google.com/file/d/1dsKTYRBv55qsaPO6Sc5BkNwpU0eM4pEI/preview" width="500" height="350" style="border: none; display: block; margin: auto;"></iframe>
+    <p><strong>Registro de Desplazado - Aron Simkins Z"L, mi bisabuelo, realizado por la International Refugee Organization (IRO), Bruselas - 12 de noviembre de 1947</strong></p>
+  </div>
+  <p>Esta contiene: Datos personales del refugiado (Nombre, lugar y fecha de nacimiento, nacionalidad previa, religión, profesión), historia del desplazamiento (Rutas de escape: Riga → Polonia → Hungría → Austria → Bélgica), familiares, y declaración manuscrita la cual dice:</p>
+  <p>"Después de la liberación no quise regresar a Riga, porque no quería estar con los comunistas. Por eso huí desde Danzig a Polonia, Hungría, Rumania y finalmente a Austria, donde ya no me sentía en peligro por parte de los comunistas.      Desde allí salí con mi esposa de Salzburgo hacia Bélgica. Mi esposa quedó muy enferma tras Auschwitz, y por eso queremos seguir viajando.     Yo llegué a Bélgica porque ya había sido perseguido por los nazis, y no quiero volver a ser perseguido por los comunistas."</p>
+</div>
+    <div id="documents_acompañante" class="documents-content">
+      <h3>Registro de Acompañante del Desplazado</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1TdcyCVBap__U4q0exlDai-qhj2CJ9LJU/preview" width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+<p>Registro de los Acompañantes del desplazado Aron Simkin Z"L, estos fueron Gitta (su esposa, mi bisabuela) Z"L y Serge (su hijo, mi abuelo), Bruselas - 12 de noviembre de 1947</p>
+</div>
+</div>
+    <div id="documents_tatarabuelo" class="documents-content">
+      <h3>Pasaporte Tatarabuelo</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/1v0vdFdvUBp-0JrDjRkeYNfr3ZFaaMfkL/preview" width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+<p>Pasaporte emitido en Letonia para Zālman Schapsebad Simkins Z"L, mi Tatarabuelo, el 4 de julio de 1922, recuperado por Yad Vashem</p>
+</div>
+</div>
+<div id="documents_acta" class="documents-content">
+      <h3>Acta de Nacimiento</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/17Ju_tGW3pyCNhKea4no8Q70jemxcq7I8/preview" width="300" height="450" style="border: none; display: block; margin: auto;"></iframe>
+<p>Acta de nacimiento de mi papá</p>
+</div>
+</div>
+    <div id="documents_teuda" class="documents-content">
+      <h3>Teudá de una letra en la Torá</h3>
+<div style="text-align: center;">
+<iframe src="https://drive.google.com/file/d/12xHopaPVRjUcqp8ZvmrJ6P_K63kpLeIn/preview" width="300" height="450" style="border: none; display: block; margin: auto;"></iframe>
+<p>Teudá de que compré una letra en la Torá, esta letra se ubica en Sefer Shemot, Parashat Shemot</p>
+</div>
+</div>
+<div style="text-align: center; margin: 50px 0;">
+  <a href="index.html" style="
+    background-color: #00b89f;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+  ">⬅ Volver al Inicio</a>
+</div>
+    </div>
+<script>
+  function toggleBio(id) {
+    document.querySelectorAll('.documents-content').forEach(sec => {
+      sec.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'block';
+  }
+</script>
+</body>
+</html>

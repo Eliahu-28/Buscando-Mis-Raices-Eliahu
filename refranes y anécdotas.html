@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refranes y Anécdotas– Buscando Mis Raíces</title>
+  <style>
+    body { 
+      font-family:'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+    }
+    header { 
+      background: linear-gradient(135deg, #00b89f, #007d70);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      font-size: 20px;
+    }
+    .proverbs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .proverbs-grid button {
+      background-color: #00b89f;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .proverbs-grid button:hover {
+      background-color: #008c77;
+      transform: scale(1.03);
+    }
+    .proverbs-content {
+      display: none;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+    }
+    .back-button {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .back-button a {
+      background-color: #00b89f;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+    .back-button a:hover {
+      background-color: #008c77;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Buscando Mis Raíces</h1>
+    <h2>Eliahu Kalman Simkins Benzaquen</h2>
+  </header>
+
+  <div id="refranes" class="section">
+    <h2><center>Refranes y Anécdotas</center></h2>
+   <div class="proverbs-grid">
+      <button onclick="toggleBio('proverbs_refran')">Refranes</button>
+      <button onclick="toggleBio('proverbs_anecdota')">Anécdotas</button>
+    </div>
+
+    <div id="proverbs_refran" class="proverbs-content">
+<center><h3>Refranes</h3><c/enter>
+<center><p>El que guarda manjares, guarda pesares.</p><p>A caballo regalado no se le miran los dientes. </p><p>La manzana no cayo lejos del árbol. </p><p>Haz fama y acuéstate a dormir. </p><p>Cuando el río suena es porque piedras trae. </p><p>El que ríe de último ríe mejor. </p><p>El que no la debe, no la teme. </p><p>Le metieron gato por liebre. </p><p>Que pequeño es el mundo. </p><p>Más sabe el diablo por viejo que por diablo. </p><p>Mejor prevenir que lamentar. </p><p>Ni tan calvo ni con dos pelucas. </p><p>Divino Di-s. </p></center>
+    </div>
+    <div id="proverbs_anecdota" class="proverbs-content">
+      <h3>Anécdotas</h3>
+<p>1: Un domingo en la mañana, hace tiempo, todos mis hermanos se habían despertado temprano y estaban desayunando, yo me desperté muy tarde y pensé que había colegio, así que me apure a ir a la cocina para desayunar, y de repente todos comienzan a cantar "Cumpleaños Feliz", no me acordaba que era mi cumpleaños, así que me emocioné mucho.</p><p>2: Estaba desayunando y mi mamá me había preparado un omelet con forma de cara y me comenzó a preguntar qué cosas tenía: los ojos, la boca ; luego me preguntó que le falta y yo dije que una kipá, entonces me respondio que tambien me faltaba a mi.</p><p>3: Estabamos de vacaciones en Disneyland, orlando, y era de noche, habíamos entrado a una tienda de lego para pasear y dar una vuelta, al minuto que entre, me fuí a una mesa especial en la que le permitían a los niños construir, cuando pasaron unos minutos me di cuenta que mi familia no estaba y comencé a dar vueltas en la tienda por que no los encontraba, me asusté mucho porque me había perdido; después de un rato me cansé de buscar y decidí salir de la tienda, allí me encontré que ellos estaban sentados en un banco, luego de estar rato buscándome.</p><p>4: Cuando estaba cursando preescolar, yo estaba de visita en la casa de mi abuela, y ella estaba planchandole las camisas a mi abuelo, cuando ella fué a revisar la comida que estaba preparando, yo, con mucha curiosidad fui hasta la mesa de planchar y estiré mi mano abierta hacia la plancha caliente, y me la quemé muchísimo por lo que tuve una mano vendada por casi dos semanas</p>
+    </div>
+<div style="text-align: center; margin: 50px 0;">
+  <a href="index.html" style="
+    background-color: #00b89f;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+  ">⬅ Volver al Inicio</a>
+</div>
+</div>
+<script>
+  function toggleBio(id) {
+    document.querySelectorAll('.proverbs-content').forEach(sec => {
+      sec.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'block';
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Árbol Genealógico</title>
+  <style>
+    body { 
+      font-family:'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+    }
+    header { 
+      background: linear-gradient(135deg, #00b89f, #007d70);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      font-size: 20px;
+    }
+    .tree-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .tree-grid button {
+      background-color: #00b89f;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .tree-grid button:hover {
+      background-color: #008c77;
+      transform: scale(1.03);
+    }
+    .tree-content {
+      display: none;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+    }
+    .back-button {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .back-button a {
+      background-color: #00b89f;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+    .back-button a:hover {
+      background-color: #008c77;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Buscando Mis Raíces</h1>
+    <h2>Eliahu Kalman Simkins Benzaquen</h2>
+  </header>
+
+<div class="tree-grid">
+  <button onclick="toggleBio('tree_1')">Parte 1</button>
+  <button onclick="toggleBio('tree_2')">Parte 2</button>
+  <button onclick="toggleBio('tree_3')">Parte 3</button>
+  <button onclick="toggleBio('tree_4')">Parte 4</button>
+  <button onclick="toggleBio('tree_5')">Parte 5</button>
+  <button onclick="toggleBio('tree_6')">Parte 6</button>
+  <button onclick="toggleBio('tree_7')">Parte 7</button>
+  <button onclick="toggleBio('tree_8')">Parte 8</button>
+  <button onclick="toggleBio('tree_ancestral')">Árbol Ancestral</button>
+</div>
+
+<div id="tree_1" class="tree-content">
+  <h3>Parte 1</h3>
+  <iframe src="https://drive.google.com/file/d/1wzMvj9irB0sAGWIPZOBNglFojICVd-2o/preview"
+        width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+<div id="tree_2" class="tree-content">
+  <h3>Parte 2</h3>
+<iframe src="https://drive.google.com/file/d/1SJV0phYe_1O7bN6jPdw6sanPMiHTh-YM/preview"
+        width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+<div id="tree_3" class="tree-content">
+  <h3>Parte 3</h3>
+  <iframe src="https://drive.google.com/file/d/1KNxU1ID89t43yQ1rmeI1uDQoExKJLqKb/preview"
+        width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+<div id="tree_4" class="tree-content">
+  <h3>Parte 4</h3>
+  <iframe src="https://drive.google.com/file/d/1R0ZWH-VVoJ9RAi7KzZg-uUkPbbl5Tj9d/preview"
+        width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+<div id="tree_5" class="tree-content">
+  <h3>Parte 5</h3>
+  <iframe src="https://drive.google.com/file/d/1S2jtzzHJ_oi1KDIupe2t5EnAmgpC_enw/preview"
+        width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+<div id="tree_6" class="tree-content">
+  <h3>Parte 6</h3>
+  <iframe src="https://drive.google.com/file/d/1I_owhmtkeGT0F21AhC5XbKuJs3WavLzg/preview"
+        width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+<div id="tree_7" class="tree-content">
+  <h3>Parte 7</h3>
+  <iframe src="https://drive.google.com/file/d/1ceipAUbVFQP1oHtD-4PB8JJBTkHUUfeV/preview"
+        width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+<div id="tree_8" class="tree-content">
+  <h3>Parte 8</h3>
+  <iframe src="https://drive.google.com/file/d/1MH3xJVlKnIpRyn4hzBfGOO6oiksDaCPt/preview"
+        width="450" height="300" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+<div id="tree_ancestral" class="tree-content">
+  <h3>Árbol Ancestral</h3>
+  <iframe src="https://drive.google.com/file/d/1JDiL0fm5KPryh3CLXi-dPe8xt3phJ9PT/preview"
+        width="300" height="450" style="border: none; display: block; margin: auto;"></iframe>
+</div>
+<div style="text-align: center; margin: 50px 0;">
+  <a href="index.html" style="
+    background-color: #00b89f;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+  ">⬅ Volver al Inicio</a>
+</div>
+<script>
+  function toggleBio(id) {
+    document.querySelectorAll('.tree-content').forEach(div => {
+      div.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'block';
+  }
+</script>
+</body>
+</html>

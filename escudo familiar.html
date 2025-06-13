@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escudo Familiar – Buscando Mis Raíces</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; }
+    header { background-color: #00b89f; color: white; text-align: center; padding: 30px 20px; font-size: 28px; font-weight: bold; }
+    .shield-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 40px auto;
+      max-width: 1000px;
+    }
+    .shield-grid button {
+      background-color: #00b89f;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .shield-grid button:hover {
+      background-color: #008c77;
+    }
+    .shield-content {
+      display: none;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Buscando mis raíces<br>Eliahu Kalman Simkins Benzaquen</header>
+
+<div id="escudo" class="section">
+  <h2 style="text-align: center;">Escudo Familiar</h2>
+
+  <div style="text-align: center;">
+    <iframe src="https://drive.google.com/file/d/19g-dgiO1Q9ejSpaRrTjJozPOxiv3Qrh_/preview"
+            width="430" height="580" style="border: none; display: block; margin: auto;"></iframe>
+  </div>
+
+  <div class="shield-content" style="display: block;">
+    <p>El escudo que diseñé representa un viaje visual por mis raíces, valores y elementos que forman parte esencial de quién soy. Tiene un fondo verde claro que simboliza esperanza, crecimiento y el legado familiar que sigue expandiéndose.</p>
+
+    <p>En la parte superior se encuentra la bandera de Israel, que representa mi identidad judía y el vínculo espiritual con la tierra de nuestros antepasados. A ambos lados coloqué objetos religiosos: un talit, unos tefilin, una kipá y un sidur, los cuales son muy significativos para mí en la conexión con H’.</p>
+
+    <p>En el centro del escudo están dibujadas las banderas de los países que forman parte de mis raíces y mi historia familiar: Venezuela, España, Bélgica y Argentina. Así como también lugares en los cuales disfruto estar y voy muchas veces, como lo son el Club Puerto Azul y el Club Hebraica.</p>
+
+    <p>Finalmente, en la parte inferior —donde normalmente iría la portería en un campo de fútbol— escribí con orgullo mis dos apellidos: Simkins, el cual significa Recolector de Trigo, y Benzaquen, el cual significa Hijo de Sabio.</p>
+  </div>
+
+  <div style="text-align: center; margin: 50px 0;">
+    <a href="index.html" style="
+      background-color: #00b89f;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    ">⬅ Volver al Inicio</a>
+  </div>
+</div>
+<script>
+  function toggleBio(id) {
+    document.querySelectorAll('.shield-content').forEach(sec => {
+      sec.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'block';
+  }
+</script>
+</body>
+</html>

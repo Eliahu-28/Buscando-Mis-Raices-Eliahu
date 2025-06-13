@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta songs="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canciones – Buscando Mis Raíces</title>
+  <style>
+    body { 
+      font-family:'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f9f9f9, #f1f1f1);
+    }
+    header { 
+      background: linear-gradient(135deg, #00b89f, #007d70);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header h2 {
+      margin-top: 10px;
+      font-weight: normal;
+      font-size: 20px;
+    }
+    .songs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .songs-grid button {
+      background-color: #00b89f;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .songs-grid button:hover {
+      background-color: #008c77;
+      transform: scale(1.03);
+    }
+    .songs-content {
+      display: none;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 40px;
+    }
+    .back-button {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .back-button a {
+      background-color: #00b89f;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s;
+    }
+    .back-button a:hover {
+      background-color: #008c77;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Buscando Mis Raíces</h1>
+    <h2>Eliahu Kalman Simkins Benzaquen</h2>
+  </header>
+
+ <div id="cancion" class="section">
+    <h2><center>Canciones</center></h2>
+    <div class="songs-grid">
+      <button onclick="toggleBio('songs_etzba')">Eser Etzba'ot</button>
+      <button onclick="toggleBio('songs_hashafan')">Hashafan Hakatan</button>
+      <button onclick="toggleBio('songs_manito')">Linda Manito</button>
+      <button onclick="toggleBio('songs_ani')">Ani Tamid Nish'ar Ani</button>
+      <button onclick="toggleBio('songs_manzana')">La manzana se pasea</button>
+    </div>
+
+    <div id="songs_etzba" class="songs-content">
+      <h3>Eser Etzba'ot</h3>
+      <p>Eser etzba’ot li yesh,</p><p>Kol davar bonot hen:</p><p>Shovach ve’yonim bo shesh -</p><p>Gur gur gur homot hen.</p><p>Hineh bayit li katan</p><p>Bo kiseh ve’gam shulchan;</p><p>Mishkafayim agulim</p><p>Li biktzeh ha'chotem.</p><p>Eser etzba’ot li yesh<p>Ve'hakol yod'ot hen:</p><p>Letza'yair ule’kashkesh,</p><p>Gam batof makot hen.</p><p>Aval oy le’yeled ra:</p><p>Etzba “nu nu nu” osah,</p><p>Bohen - B'rogez etzba’ot,</p><p>Zeret - mitpaisot hen.</p>
+    </div>
+ <div id="songs_hashafan" class="songs-content">
+      <h3>Hashafan Hakatan</h3>
+      <p>Hashafan hakatan shajaj lizgor hadelet, hitztanen hamizken vekibel nazelet, la la la larala, la la la larala, la la la larala, la la la la, Hashafan hakatan shajaj lizgor hadelet, hitztanen hamizken vekibel nazelet, la la la larala, la la la larala, la la la larala, la la la la.</p>
+    </div>
+    <div id="songs_manito" class="songs-content">
+      <h3>Linda Manito</h3>
+      <p>Que linda manito que tengo yo, que linda y bonita que Di-os me la regalo.</p>
+    </div>
+    <div id="songs_ani" class="songs-content">
+      <h3>Ani Tamid Nish'ar Ani</h3>
+      <p>Lif'amim ani atzuv</p><p>velif'amim - same'ach.</p><p>Lif'amim ani zocher</p><p>velif'amim shoche'ach.</p><p>Lif'amim ani save'a</p><p>velif'amim -</p> ra'ev</p><p>Lif'amim ani ko'es</p><p>velif'amim - ohev.</p><p>Aval ani tamid nish'ar ani</p><p>tamid nish'ar ani</p><p>tamid nish'ar ani!</p><p>Lif'amim ani gadol</p><p>velif'amim - katan.</p><p>Lif'amim ani gibor</p><p>velif'amim - pachdan.</p><p>Lif'amim ani beyachad</p><p>velif'amim - levad,</p><p>lif'amim ani ba'emtza</p><p>velif'amim - batzad.</p><p>Aval ani tamid nish'ar ani...</p><p>Lif'amim ani kinor</p><p>velif'amim - tupim.</p><p>Lif'amim ani keytzi</p><p>velif'amim chorfi.</p><p>Lif'amim ani atzlan</p><p>velif'amim - charutz,</p><p>lif'amim ani matok</p><p>velif'amim - chamutz.</p><p>Aval ani tamid nish'ar ani...</p><p>Lif'amim ani chacham</p><p>velif'amim - tipshi.</p><p>Lif'amim ani rishon</p><p>velif'amim shlishi.</p><p>Lif'amim ani tofes</p><p>velif'amim - tafus,</p><p>lif'amim ani anak</p><p>velif'amim - fisfus.</p><p>Aval ani tamid nish'ar ani...</p>
+    </div>
+    <div id="songs_manzana" class="songs-content">
+      <h3>La manzana se pasea</h3>
+      <p>La manzana se pasea de la sala al comedor, no me piques con cuchillo, picame con tenedor, al picar a la manzana un dedito me corté, mi abuelita me ha curado con un beso y un pastel.</p>
+    </div>
+</div>
+<div style="text-align: center; margin: 50px 0;">
+  <a href="index.html" style="
+    background-color: #00b89f;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+  ">⬅ Volver al Inicio</a>
+</div>
+<script>
+  function toggleBio(id) {
+    document.querySelectorAll('.songs-content').forEach(sec => {
+      sec.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'block';
+  }
+</script>
+</body>
+</html>
